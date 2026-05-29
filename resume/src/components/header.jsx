@@ -1,63 +1,51 @@
+import { Link } from "react-router-dom";
+
 function Header() {
+  const navClass =
+    "inline-block transition-all duration-300 hover:scale-110 hover:text-white hover:[text-shadow:0_0_5px_#ffffff,0_0_10px_#ffffff,0_0_20px_#ffffff,0_0_40px_#ffffff]";
+
   return (
-    <>
-      <header className="bg-black shadow-md font-text">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-semibold text-white">
-            Atharva Kumkar
-          </h1>
+    <header className="bg-black shadow-md font-text">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <h1 className="text-2xl font-semibold text-white">
+          Atharva Kumkar
+        </h1>
 
-          <nav>
-            <ul className="flex items-center gap-8 text-gray-100 font-medium">
-              <li>
-                <a
-                  href="#"
-                  className="inline-block transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_40px_rgba(96,165,250,1)]"
-                >
-                  Home
-                </a>
-              </li>
+        <nav>
+          <ul className="flex items-center gap-8 text-gray-100 font-medium">
+            <li>
+              <Link to="/" className={navClass}>
+                Home
+              </Link>
+            </li>
 
-              <li>
-                <a
-                  href="#"
-                  className="inline-block transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_40px_rgba(96,165,250,1)]"
-                >
-                  About
-                </a>
-              </li>
+            <li>
+              <Link to="/about" className={navClass}>
+                About
+              </Link>
+            </li>
 
-              <li>
-                <a
-                  href="#"
-                  className="inline-block transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_40px_rgba(96,165,250,1)]"
-                >
-                  Projects
-                </a>
-              </li>
+            <li>
+              <Link to="/projects" className={navClass}>
+                Projects
+              </Link>
+            </li>
 
-              <li>
-                <a
-                  href="#"
-                  className="inline-block transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_40px_rgba(96,165,250,1)]"
-                >
-                  Certificates
-                </a>
-              </li>
+            <li>
+              <Link to="/certificates" className={navClass}>
+                Certificates
+              </Link>
+            </li>
 
-              <li>
-                <a
-                  href="#"
-                  className="inline-block transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_40px_rgba(96,165,250,1)]"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </>
+            <li>
+              <Link to="/contact" className={navClass}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }
 
