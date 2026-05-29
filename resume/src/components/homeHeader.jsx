@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 function HomeHeader() {
   const navClass =
-    "inline-block transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_20px_rgba(96,165,250,1)]";
+    "inline-block transition-all duration-300 hover:scale-110 hover:text-white hover:[text-shadow:0_0_5px_#ffffff,0_0_10px_#ffffff,0_0_20px_#ffffff,0_0_40px_#ffffff]";
 
   return (
     <header className="bg-black shadow-md font-text">
@@ -12,36 +14,36 @@ function HomeHeader() {
         <nav>
           <ul className="flex items-center gap-8 text-gray-100 font-medium">
             <li>
-              <a
-                href="#"
-                className="relative inline-block scale-110 drop-shadow-[0_0_20px_rgba(96,165,250,1)] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-white after:shadow-[0_0_10px_rgba(96,165,250,1)]"
+              <Link
+                to="/"
+                className="relative inline-block scale-110 text-white [text-shadow:0_0_5px_#ffffff,0_0_10px_#ffffff,0_0_20px_#ffffff,0_0_40px_#ffffff] after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-white after:shadow-[0_0_10px_rgba(255,255,255,1)]"
               >
                 Home
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className={navClass}>
+              <Link to="/about" className={navClass}>
                 About
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className={navClass}>
+              <Link to="/projects" className={navClass}>
                 Projects
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className={navClass}>
+              <Link to="/certificates" className={navClass}>
                 Certificates
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className={navClass}>
+              <Link to="/contact" className={navClass}>
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
