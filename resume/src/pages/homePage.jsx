@@ -1,4 +1,4 @@
-import HomeHeader from "../components/homeHeader";
+import Header from "../components/header";
 import Footer from "../components/footer";
 import { FaEye, FaChevronDown } from "react-icons/fa";
 import Expertise from "./expertiseHomePage";
@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 function HomePage() {
     return (
         <>
-            <HomeHeader />
+            <Header />
 
             <div className="relative min-h-screen text-white overflow-hidden">
                 {/* Animated Constellation Background */}
@@ -113,7 +113,7 @@ function HomePage() {
                     <div className="flex flex-col items-center mt-10">
                         <a
                             href="#expertise"
-                            className="group w-10 h-10 border border-white bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:bg-black animate-bounce"
+                            className="group w-10 h-10 border border-white bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:bg-black"
                         >
                             <FaChevronDown className="text-lg text-black transition-colors duration-300 group-hover:text-white" />
                         </a>
