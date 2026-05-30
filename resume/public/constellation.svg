@@ -1,0 +1,82 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Connections -->
+  <g stroke="white" stroke-width="1.5" opacity="0.3">
+
+    <!-- Main Backbone -->
+    <line x1="180" y1="470" x2="420" y2="390"/>
+    <line x1="420" y1="390" x2="760" y2="450"/>
+    <line x1="760" y1="450" x2="1050" y2="330"/>
+    <line x1="1050" y1="330" x2="1380" y2="280"/>
+    <line x1="1380" y1="280" x2="1730" y2="430"/>
+
+    <!-- Alternate Routes -->
+    <line x1="420" y1="390" x2="620" y2="220"/>
+    <line x1="620" y1="220" x2="1050" y2="330"/>
+
+    <line x1="760" y1="450" x2="920" y2="680"/>
+    <line x1="920" y1="680" x2="1380" y2="280"/>
+
+    <line x1="1380" y1="280" x2="1550" y2="620"/>
+    <line x1="1550" y1="620" x2="1730" y2="430"/>
+
+    <!-- Lower Backbone -->
+    <line x1="320" y1="760" x2="620" y2="820"/>
+    <line x1="620" y1="820" x2="920" y2="680"/>
+    <line x1="920" y1="680" x2="1280" y2="770"/>
+    <line x1="1280" y1="770" x2="1550" y2="620"/>
+
+  </g>
+
+  <!-- Large Region Nodes -->
+  <g fill="white" opacity="0.6">
+
+    <circle cx="180" cy="470" r="6"/>
+    <circle cx="420" cy="390" r="7"/>
+    <circle cx="760" cy="450" r="8"/>
+    <circle cx="1050" cy="330" r="9"/>
+    <circle cx="1380" cy="280" r="8"/>
+    <circle cx="1730" cy="430" r="7"/>
+
+   
+    <circle cx="1550" cy="620" r="6"/>
+
+    <circle cx="320" cy="760" r="5"/>
+    <circle cx="620" cy="820" r="5"/>
+    <circle cx="1280" cy="770" r="5"/>
+
+  </g>
+
+  <!-- Glow Rings -->
+  <g opacity="0.1" stroke="white" fill="none">
+    <circle cx="760" cy="450" r="20"/>
+    <circle cx="1050" cy="330" r="28"/>
+    <circle cx="1380" cy="280" r="20"/>
+  </g>
+
+  <!-- Background Stars -->
+  <g fill="white" opacity="0.18">
+
+    <circle cx="90" cy="130" r="1"/>
+    <circle cx="250" cy="210" r="1.5"/>
+    <circle cx="510" cy="120" r="1"/>
+    <circle cx="830" cy="90" r="1.5"/>
+    <circle cx="1170" cy="110" r="1"/>
+    <circle cx="1500" cy="150" r="1.5"/>
+    <circle cx="1800" cy="100" r="1"/>
+
+    <circle cx="200" cy="920" r="1"/>
+    <circle cx="500" cy="980" r="1.5"/>
+    <circle cx="850" cy="940" r="1"/>
+    <circle cx="1180" cy="980" r="1"/>
+    <circle cx="1460" cy="930" r="1.5"/>
+    <circle cx="1780" cy="980" r="1"/>
+
+    <circle cx="1600" cy="300" r="1"/>
+    <circle cx="1450" cy="500" r="1"/>
+    <circle cx="700" cy="150" r="1"/>
+    <circle cx="980" cy="850" r="1.5"/>
+
+  </g>
+
+</svg>
