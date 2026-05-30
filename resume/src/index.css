@@ -23,4 +23,30 @@
 
 html {
   scroll-behavior: smooth;
+  /* offset anchor jumps so content lands below the sticky/floating header */
+  scroll-padding-top: 80px;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-60px, -40px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
