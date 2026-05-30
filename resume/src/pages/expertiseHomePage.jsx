@@ -33,7 +33,7 @@ function Expertise() {
     ];
 
     return (
-        <section className="bg-[#050505] mt-10 px-6 font-body">
+        <section className="mt-8 px-6 font-body">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {expertise.map((item, index) => (
@@ -69,29 +69,36 @@ function Expertise() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="
+                                    group
                                     mt-6
                                     inline-flex
                                     items-center
                                     justify-center
+                                    gap-2
                                     border
                                     border-white/20
                                     text-white
                                     px-4
                                     py-2
                                     rounded-lg
-                                    hover:bg-white
-                                    hover:text-black
                                     transition-all
                                     duration-300
+                                    hover:bg-white
+                                    hover:text-black
+                                    hover:scale-105
+                                    hover:[box-shadow:0_0_10px_#ffffff,0_0_20px_#ffffff,0_0_40px_#ffffff]
                                 "
                             >
-                                View Repository →
+                                View Repository
+                                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                                    →
+                                </span>
                             </a>
                         </div>
                     ))}
                 </div>
 
-                <div className="flex justify-center mt-12">
+                <div className="flex justify-center mt-6">
                     <Link to="/projects">
                         <button className="group bg-white text-black py-2 px-8 rounded-[4px] font-body flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:[box-shadow:0_0_10px_#ffffff,0_0_20px_#ffffff,0_0_40px_#ffffff]">
                             View More Projects
