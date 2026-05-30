@@ -1,7 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..1000&family=Plus+Jakarta+Sans:wght@200..800&display=swap');
 
 @import "tailwindcss";
 
 @theme {
   --font-text: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Google Sans Flex", sans-serif;
+}
+
+@keyframes blink {
+  0%, 45%, 100% {
+    transform: scaleY(1);
+  }
+  48%, 52% {
+    transform: scaleY(0.1);
+  }
+}
+
+.blink-eye {
+  animation: blink 4s infinite;
+  transform-origin: center;
+}
+
+html {
+  scroll-behavior: smooth;
 }
