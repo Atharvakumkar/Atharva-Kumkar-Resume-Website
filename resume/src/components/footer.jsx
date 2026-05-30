@@ -6,7 +6,7 @@ function Footer() {
         "text-[20px] text-white transition-all duration-300 hover:scale-125 hover:[filter:drop-shadow(0_0_8px_#fff)_drop-shadow(0_0_16px_#fff)_drop-shadow(0_0_32px_#fff)]";
 
     return (
-        <footer className="w-full bg-black text-white flex flex-col items-center justify-center py-8 text-center">
+        <footer className="w-full  text-white flex flex-col items-center justify-center py-8 text-center">
             <h1 className="text-[20px] font-semibold opacity-90">
                 Atharva Kumkar
             </h1>
