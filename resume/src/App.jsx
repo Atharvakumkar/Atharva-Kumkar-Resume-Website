@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Header from "./components/header";
 import HomeHeader from "./components/homeHeader";
@@ -12,6 +13,7 @@ import ProjectsPage from "./pages/projectsPage";
 function App() {
     return(
         <BrowserRouter>
+            <ScrollToTop />
             <div className="min-h screen bg-black text-white">
                 <Routes>
                     <Route path ='/' element={<HomePage />} />
