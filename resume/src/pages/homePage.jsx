@@ -49,7 +49,14 @@ function HomePage() {
                 >
                     {/* Hero Section */}
                     <div className="flex flex-col items-center text-center pt-32 pb-10 px-6">
-                        <h1 className="font-body font-semibold text-[84px] leading-none">
+                        <h1 className="
+        text-[84px]
+        font-semibold
+        font-body
+        font-body
+        leading-none
+        text-white
+        [text-shadow:0_0_10px_rgba(255,255,255,0.4),0_0_20px_rgba(255,255,255,0.2)]">
                             Hi, I am Atharva
                         </h1>
 
@@ -111,12 +118,17 @@ function HomePage() {
 
                     {/* Scroll Down Arrow */}
                     <div className="flex flex-col items-center mt-10">
-                        <a
-                            href="#expertise"
-                            className="group w-10 h-10 border border-white bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:bg-black"
+                        <button
+                            onClick={() => {
+                                document
+                                    .getElementById("expertise")
+                                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                            }}
+                            aria-label="Scroll to expertise section"
+                            className="group w-10 h-10 border border-white bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:bg-black animate-bounce"
                         >
                             <FaChevronDown className="text-lg text-black transition-colors duration-300 group-hover:text-white" />
-                        </a>
+                        </button>
                     </div>
 
                     {/* Expertise Section */}
@@ -124,7 +136,14 @@ function HomePage() {
                         id="expertise"
                         className="min-h-[80vh] flex flex-col items-center pt-10 pb-15 px-6"
                     >
-                        <h1 className="font-body font-semibold text-[56px] leading-none">
+                        <h1 className="
+        text-[56px]
+        font-body
+        font-semibold
+        font-body
+        leading-none
+        text-white
+        [text-shadow:0_0_10px_rgba(255,255,255,0.4),0_0_20px_rgba(255,255,255,0.2)]">
                             My Expertise
                         </h1>
 
