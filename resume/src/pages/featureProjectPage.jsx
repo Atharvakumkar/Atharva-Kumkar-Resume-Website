@@ -41,7 +41,7 @@ function FeaturedProject() {
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.7 }}
+                    transition={{ duration: 0.6 }}
                     whileHover={{ y: -6 }}
                     className="
                         group

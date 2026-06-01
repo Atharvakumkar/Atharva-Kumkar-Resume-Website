@@ -50,7 +50,7 @@ function BuildAbout() {
         },
     ]
     return (
-        <section id="expertise" className="pt-1 px-6 font-body">
+        <section id="expertise" className="pt-22 px-6 font-body">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-2">

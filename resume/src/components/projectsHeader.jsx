@@ -8,9 +8,13 @@ function ProjectsHeader() {
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", handleScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    return () =>
+      window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const links = [
@@ -31,7 +35,10 @@ function ProjectsHeader() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.35, ease: "easeInOut" }}
+            transition={{
+              duration: 0.35,
+              ease: "easeInOut",
+            }}
             className="font-text bg-black sticky top-0 z-50 w-full"
           >
             <div className="max-w-7xl mx-auto px-9 py-4 flex items-center justify-between">
@@ -42,7 +49,9 @@ function ProjectsHeader() {
               <nav>
                 <ul className="flex items-center gap-8 text-gray-100 font-medium text-sm">
                   {links.map(({ to, label }) => {
-                    const isProjects = to === "/projects";
+                    const isActive =
+                      location.pathname === to;
+
                     return (
                       <li key={to}>
                         <Link
@@ -50,32 +59,32 @@ function ProjectsHeader() {
                           className={`
                             relative inline-block transition-all duration-300
                             ${
-                              isProjects
+                              isActive
                                 ? "text-white [text-shadow:0_0_8px_rgba(255,255,255,0.8),0_0_20px_rgba(255,255,255,0.6),0_0_40px_rgba(255,255,255,0.4)]"
                                 : "hover:text-white hover:[text-shadow:0_0_8px_rgba(255,255,255,0.8),0_0_20px_rgba(255,255,255,0.6),0_0_40px_rgba(255,255,255,0.4)]"
                             }
                           `}
                         >
-        {label}
+                          {label}
 
-        {isProjects && (
-          <span
-            className="
-              absolute
-              -bottom-1
-              left-0
-              w-full
-              h-[2px]
-              bg-white
-              rounded-full
-              shadow-[0_0_10px_rgba(255,255,255,0.9)]
-            "
-          />
-        )}
-      </Link>
-    </li>
-  );
-})}
+                          {isActive && (
+                            <span
+                              className="
+                                absolute
+                                -bottom-1
+                                left-0
+                                w-full
+                                h-[2px]
+                                bg-white
+                                rounded-full
+                                shadow-[0_0_10px_rgba(255,255,255,0.9)]
+                              "
+                            />
+                          )}
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
             </div>
@@ -88,9 +97,21 @@ function ProjectsHeader() {
         {scrolled && (
           <motion.div
             key="floating-header"
-            initial={{ opacity: 0, y: -48, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -48, scale: 0.9 }}
+            initial={{
+              opacity: 0,
+              y: -48,
+              scale: 0.9,
+            }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+            }}
+            exit={{
+              opacity: 0,
+              y: -48,
+              scale: 0.9,
+            }}
             transition={{
               duration: 0.4,
               ease: [0.25, 0.46, 0.45, 0.94],
@@ -104,34 +125,42 @@ function ProjectsHeader() {
                 bg-black/50 backdrop-blur-2xl
                 border border-white/10
                 shadow-[0_8px_40px_rgba(0,0,0,0.6),inset_0_1px_0_rgba(255,255,255,0.06)]
-                rounded-2xl
+                rounded-3xl
                 px-9 py-5
                 w-full max-w-3xl
               "
             >
-              {/* Logo */}
               <motion.div
                 className="flex items-center gap-2 shrink-0"
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.08, duration: 0.3 }}
+                transition={{
+                  delay: 0.08,
+                  duration: 0.3,
+                }}
               >
                 <span className="text-sm font-semibold text-white tracking-tight whitespace-nowrap">
                   Atharva Kumkar
                 </span>
               </motion.div>
 
-              {/* Nav Links */}
               <nav className="flex-1 flex justify-end">
                 <ul className="flex items-center gap-6 text-sm font-medium">
                   {links.map(({ to, label }, i) => {
-                    const isActive = location.pathname === to;
+                    const isActive =
+                      location.pathname === to;
 
                     return (
                       <motion.li
                         key={to}
-                        initial={{ opacity: 0, y: -8 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        initial={{
+                          opacity: 0,
+                          y: -8,
+                        }}
+                        animate={{
+                          opacity: 1,
+                          y: 0,
+                        }}
                         transition={{
                           delay: 0.06 + i * 0.05,
                           duration: 0.3,

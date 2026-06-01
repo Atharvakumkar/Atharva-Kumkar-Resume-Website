@@ -117,7 +117,7 @@ function HomePage() {
 </div>
 
                     {/* Scroll Down Arrow */}
-                    <div className="flex flex-col items-center mt-10">
+                    <div className="flex flex-col items-center mt-30">
                         <button
                             onClick={() => {
                                 document
@@ -134,7 +134,7 @@ function HomePage() {
                     {/* Expertise Section */}
                     <div
                         id="expertise"
-                        className="min-h-[80vh] flex flex-col items-center pt-10 pb-15 px-6"
+                        className="min-h-[80vh] flex flex-col items-center pt-20 pb-15 px-6"
                     >
                         <h1 className="
         text-[56px]

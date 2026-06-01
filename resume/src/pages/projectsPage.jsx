@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import Header from "../components/header";
+import ProjectsHeader from "../components/projectsHeader";
 import Footer from "../components/footer";
 import FeaturedProject from "./featureProjectPage";
 
 function ProjectsPage() {
     return (
         <>
-            <Header />
+            <ProjectsHeader />
 
             <div className="relative text-white min-h-screen">
                 {/* Constellation Background */}
