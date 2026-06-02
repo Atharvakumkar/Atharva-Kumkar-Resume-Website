@@ -59,6 +59,7 @@ function FeaturedProject() {
                         duration-500
                         hover:border-white/25
                         hover:shadow-[0_0_40px_rgba(255,255,255,0.08)]
+                        backdrop-blur-sm
                     "
                 >
                     {/* Hover Glow */}
