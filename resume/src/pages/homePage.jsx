@@ -81,7 +81,7 @@ function HomePage() {
 
                     {/* Navigation Buttons */}
                     {/* Social Links */}
-<div className="flex gap-4 flex-wrap justify-center px-6">
+<div className="flex gap-4 flex-wrap justify-center px-6 pb-44">
     <a
         href="https://github.com/atharvakumkar"
         target="_blank"
@@ -116,25 +116,11 @@ function HomePage() {
     </a>
 </div>
 
-                    {/* Scroll Down Arrow */}
-                    <div className="flex flex-col items-center mt-30">
-                        <button
-                            onClick={() => {
-                                document
-                                    .getElementById("expertise")
-                                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
-                            }}
-                            aria-label="Scroll to expertise section"
-                            className="group w-10 h-10 border border-white bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:bg-black animate-bounce"
-                        >
-                            <FaChevronDown className="text-lg text-black transition-colors duration-300 group-hover:text-white" />
-                        </button>
-                    </div>
 
                     {/* Expertise Section */}
                     <div
                         id="expertise"
-                        className="min-h-[80vh] flex flex-col items-center pt-20 pb-15 px-6"
+                        className="min-h-[80vh] flex flex-col items-center pt-1 pb-15 px-6"
                     >
                         <h1 className="
         text-[56px]
