@@ -33,7 +33,7 @@ function FeaturedProject() {
     ];
 
     return (
-        <section className="px-6 font-body">
+        <section className="px-4 md:px-6 font-body">
             <div className="max-w-7xl mx-auto">
 
                 {/* Featured Card */}
@@ -54,7 +54,7 @@ function FeaturedProject() {
                         backdrop-blur-none
                         p-8
                         md:p-12
-                        min-h-[520px]
+                        min-h-[auto] md:min-h-[520px]
                         transition-all
                         duration-500
                         hover:border-white/25

@@ -11,7 +11,7 @@ function IntroContact() {
         <section>
             {/* Content */}
                 <motion.div
-                    className="px-6 pt-30"
+                    className="px-6 pt-16 md:pt-30"
                     initial={{
                         opacity: 0,
                         y: 30,
@@ -30,7 +30,7 @@ function IntroContact() {
                             text-center
                             font-body
                             font-bold
-                            text-5xl
+                            text-3xl md:text-5xl
                             mb-6
                             text-white
                             [text-shadow:0_0_10px_rgba(255,255,255,0.4),0_0_40px_rgba(255,255,255,0.2)]
@@ -45,7 +45,7 @@ function IntroContact() {
                             mx-auto
                             text-center
                             font-body
-                            text-2xl
+                            text-lg md:text-2xl
                             text-white
                             [text-shadow:0_0_10px_rgba(255,255,255,0.4),0_0_10px_rgba(255,255,255,0.2)]
                         "

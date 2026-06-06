@@ -29,12 +29,12 @@ left: false,
 ];
 
 return (
-    <section className="max-w-6xl mx-auto px-6 py-20">
+    <section className="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-20">
         <h1
             className="
-                text-5xl
+                text-3xl md:text-5xl
                 font-bold
-                mb-20
+                mb-12 md:mb-20
                 font-body
                 text-white
                 text-center
@@ -44,7 +44,43 @@ return (
             What I'm Exploring
         </h1>
 
-        <div className="relative">
+        {/* Mobile: simple stacked list */}
+        <div className="flex flex-col gap-6 md:hidden">
+            {exploring.map((item, index) => (
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                >
+                    <div
+                        className="
+                            backdrop-blur-md
+                            bg-white/5
+                            border
+                            border-white/10
+                            rounded-2xl
+                            p-5
+                            transition-all
+                            duration-300
+                            hover:border-white/30
+                            hover:bg-white/10
+                        "
+                    >
+                        <h2 className="text-xl font-semibold text-white mb-3">
+                            {item.title}
+                        </h2>
+                        <p className="text-gray-300 leading-relaxed">
+                            {item.description}
+                        </p>
+                    </div>
+                </motion.div>
+            ))}
+        </div>
+
+        {/* Desktop: alternating timeline layout */}
+        <div className="relative hidden md:block">
             {/* Center Line */}
             <div className="absolute left-1/2 top-0 h-full w-[2px] bg-white/20 -translate-x-1/2"></div>
 

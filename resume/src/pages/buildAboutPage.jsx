@@ -50,14 +50,14 @@ function BuildAbout() {
         },
     ]
     return (
-        <section id="expertise" className="pt-22 px-6 font-body">
+        <section id="expertise" className="pt-12 md:pt-22 px-4 md:px-6 font-body">
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
                 <div className="text-center mb-2">
                  
 
                     <h2 className="
-                        text-5xl
+                        text-3xl md:text-5xl
                         font-bold
                         mb-12
                         font-body
@@ -83,14 +83,14 @@ function BuildAbout() {
                                 border
                                 border-white/10
                                 rounded-3xl
-                                p-8
+                                p-5 md:p-8
                                 transition-all
                                 duration-500
                                 hover:bg-white/[0.06]
                                 hover:border-white/20
                                 hover:-translate-y-2
                                 hover:shadow-[0_0_30px_rgba(255,255,255,0.08)]
-                                min-h-[360px]
+                                min-h-[auto] md:min-h-[360px]
                                 flex
                                 flex-col
                             "

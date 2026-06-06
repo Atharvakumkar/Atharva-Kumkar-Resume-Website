@@ -78,8 +78,7 @@ function SelectedProjects() {
                 <div className="mb-14">
                     <h2
                         className="
-                            text-5xl
-                            md:text-5xl
+                            text-3xl md:text-5xl
                             font-bold
                             text-white
                             mb-4
@@ -92,7 +91,7 @@ function SelectedProjects() {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
                     {projects.map((project, index) => (
                         <motion.div
@@ -121,8 +120,8 @@ function SelectedProjects() {
                                 border
                                 border-white/10
                                 bg-white/[0.03]
-                                p-8
-                                min-h-[340px]
+                                p-5 md:p-8
+                                min-h-[auto] md:min-h-[340px]
                                 transition-all
                                 duration-500
                                 hover:border-white/20

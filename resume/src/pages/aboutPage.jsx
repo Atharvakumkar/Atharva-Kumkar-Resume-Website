@@ -34,7 +34,7 @@ function AboutPage() {
                 <div className="relative z-10 text-white">
                     {/* Hero / Introduction Section */}
                     <motion.div
-                        className="px-6 pt-30"
+                        className="px-6 pt-16 md:pt-30"
                         initial={{
                             opacity: 0,
                             y: 30,
@@ -48,10 +48,10 @@ function AboutPage() {
                             ease: "easeOut",
                         }}
                     >
-                        <div className="pt-10 pb-30 px-10">
+                        <div className="pt-6 pb-16 px-4 md:pt-10 md:pb-30 md:px-10">
                             <h1
                                 className="
-                                    text-5xl
+                                    text-3xl md:text-5xl
                                     font-bold
                                     mb-6
                                     font-body

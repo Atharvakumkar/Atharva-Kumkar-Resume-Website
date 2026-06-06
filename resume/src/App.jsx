@@ -4,7 +4,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/header";
 import HomeHeader from "./components/homeHeader";
 
-import HomePage from "./pages/homepage";
+import HomePage from "./pages/homePage";
 import AboutPage from "./pages/aboutPage";
 import CertificatesPage from "./pages/certificatesPage";
 import ContactPage from "./pages/contactPage";

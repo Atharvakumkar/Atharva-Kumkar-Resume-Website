@@ -48,11 +48,10 @@ function HomePage() {
                     }}
                 >
                     {/* Hero Section */}
-                    <div className="flex flex-col items-center text-center pt-32 pb-10 px-6">
+                    <div className="flex flex-col items-center text-center pt-20 md:pt-32 pb-10 px-6">
                         <h1 className="
-        text-[84px]
+        text-4xl sm:text-5xl md:text-[84px]
         font-semibold
-        font-body
         font-body
         leading-none
         text-white
@@ -60,7 +59,7 @@ function HomePage() {
                             Hi, I am Atharva
                         </h1>
 
-                        <p className="text-[24px] max-w-3xl mt-2 opacity-75">
+                        <p className="text-base md:text-[24px] max-w-3xl mt-2 opacity-75">
                             I build cloud infrastructure, backend systems, and
                             automation that scales.
                         </p>
@@ -81,7 +80,7 @@ function HomePage() {
 
                     {/* Navigation Buttons */}
                     {/* Social Links */}
-<div className="flex gap-4 flex-wrap justify-center px-6 pb-44">
+<div className="flex gap-4 flex-wrap justify-center px-6 pb-20 md:pb-44">
     <a
         href="https://github.com/atharvakumkar"
         target="_blank"
@@ -123,10 +122,9 @@ function HomePage() {
                         className="min-h-[80vh] flex flex-col items-center pt-1 pb-15 px-6"
                     >
                         <h1 className="
-        text-[56px]
+        text-3xl md:text-[56px]
         font-body
         font-semibold
-        font-body
         leading-none
         text-white
         [text-shadow:0_0_10px_rgba(255,255,255,0.4),0_0_20px_rgba(255,255,255,0.2)]">

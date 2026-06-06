@@ -50,10 +50,10 @@ function ProjectsPage() {
                     }}
                 >
                     {/* Hero Title */}
-                    <div className="px-6 pt-20 pb-2 text-center">
+                    <div className="px-4 md:px-6 pt-14 md:pt-20 pb-2 text-center">
                         <h1
                             className="
-                                text-5xl
+                                text-3xl md:text-5xl
                                 font-bold
                                 mb-6
                                 font-body
@@ -72,7 +72,7 @@ function ProjectsPage() {
                     <SelectedProjects />
 
                     {/* GitHub CTA */}
-                    <section className="px-6 mt-1 mb-15">
+                    <section className="px-4 md:px-6 mt-1 mb-8 md:mb-15">
                         <div className="max-w-7xl mx-auto">
                             <div
                                 className="
@@ -82,7 +82,7 @@ function ProjectsPage() {
                                     border
                                     border-white/10
                                     bg-white/[0.03]
-                                    p-12
+                                    p-6 md:p-12
                                     text-center
                                     backdrop-blur-sm
                                 "
@@ -101,7 +101,7 @@ function ProjectsPage() {
                                         className="
                                             font-body
                                             text-white
-                                            text-5xl
+                                            text-3xl md:text-5xl
                                             font-bold
                                             [text-shadow:0_0_40px_rgba(255,255,255,0.4),0_0_20px_rgba(255,255,255,0.2)]
                                         "
@@ -112,7 +112,7 @@ function ProjectsPage() {
                                     <h3
                                         className="
                                             font-body
-                                            text-xl
+                                            text-base md:text-xl
                                             mt-8
                                             max-w-3xl
                                             mx-auto

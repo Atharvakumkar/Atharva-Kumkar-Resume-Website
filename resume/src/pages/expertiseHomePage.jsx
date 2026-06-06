@@ -45,7 +45,7 @@ function Expertise() {
                                 border
                                 border-white/10
                                 rounded-2xl
-                                p-8
+                                p-5 md:p-8
                                 hover:bg-white/10
                                 hover:border-white/20
                                 hover:-translate-y-2
@@ -53,7 +53,7 @@ function Expertise() {
                                 duration-300
                                 flex
                                 flex-col
-                                min-h-[320px]
+                                min-h-[200px] md:min-h-[320px]
                             "
                         >
                             <h3 className="text-white text-xl font-semibold mb-4">
