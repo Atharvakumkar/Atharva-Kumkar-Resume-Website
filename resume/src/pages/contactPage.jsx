@@ -49,7 +49,7 @@ function ContactPage() {
                     <IntroContact />
 
                     {/* Quick Info */}
-                    <section className="px-6 mt-32 mb-8">
+                    <section className="px-6 mt-36 mb-8">
                         <div className="max-w-7xl mx-auto border-t border-white/10 py-12">
                             <h2
                                 className="
