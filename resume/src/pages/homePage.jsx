@@ -31,24 +31,26 @@ function HomePage() {
                 {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-black/85" />
 
-                {/* Content - Everything fades in together */}
-                <motion.div
-                    className="relative z-10"
-                    initial={{
-                        opacity: 0,
-                        y: 30,
-                    }}
-                    animate={{
-                        opacity: 1,
-                        y: 0,
-                    }}
-                    transition={{
-                        duration: 1,
-                        ease: "easeOut",
-                    }}
-                >
+                {/* Content */}
+                <div className="relative z-10">
                     {/* Hero Section */}
-                    <div className="flex flex-col items-center text-center pt-20 md:pt-32 pb-10 px-6">
+                    <motion.div
+                        className="flex flex-col items-center justify-center min-h-[100dvh]"
+                        initial={{
+                            opacity: 0,
+                            y: 30,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        transition={{
+                            duration: 1,
+                            ease: "easeOut",
+                        }}
+                    >
+                        <div className="flex flex-col items-center justify-center w-full max-w-7xl mx-auto -mt-16 md:-mt-24">
+                            <div className="flex flex-col items-center text-center px-6">
                         <h1 className="
         text-4xl sm:text-5xl md:text-[84px]
         font-semibold
@@ -80,7 +82,7 @@ function HomePage() {
 
                     {/* Navigation Buttons */}
                     {/* Social Links */}
-<div className="flex gap-4 flex-wrap justify-center px-6 pb-20 md:pb-44">
+<div className="flex gap-4 flex-wrap justify-center px-6 mt-16 md:mt-24">
     <a
         href="https://github.com/atharvakumkar"
         target="_blank"
@@ -114,13 +116,20 @@ function HomePage() {
         </button>
     </a>
 </div>
-
+                        </div>
+                    </motion.div>
 
                     {/* Expertise Section */}
-                    <div
-                        id="expertise"
-                        className="min-h-[80vh] flex flex-col items-center pt-1 pb-15 px-6"
+                    <motion.div
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
                     >
+                        <div
+                            id="expertise"
+                            className="min-h-[80vh] flex flex-col items-center pt-10 pb-15 px-6"
+                        >
                         <h1 className="
         text-3xl md:text-[56px]
         font-body
@@ -134,8 +143,10 @@ function HomePage() {
                         <Expertise />
                     </div>
 
+                    </motion.div>
+                    
                     <Footer />
-                </motion.div>
+                </div>
             </div>
         </>
     );
