@@ -41,18 +41,18 @@ function SelectedProjects() {
             github: "https://github.com/Atharvakumkar/Serverless-PDF-Text-Extractor",
         },
         {
-            title: "RAG Document Assistant",
+            title: "AI DevSecOps Hub",
             status: "Completed",
             description:
-                "Semantic document retrieval system combining vector search, embeddings, and LLM-powered question answering.",
+                "Automated DevSecOps platform that scans public Git repositories for vulnerabilities, performs static code analysis, and generates AI-powered security reports using Jenkins, Trivy, SonarQube, and Flask.",
             technologies: [
-                "Python",
-                "OpenAI",
-                "ChromaDB",
-                "FastAPI",
-                "RAG",
+                "AWS",
+                "Jenkins",
+                "Sonarqube",
+                "Docker",
+                "Trivy",
             ],
-            github: "https://github.com/Atharvakumkar/RAG-Document-Assistant",
+            github: "https://github.com/Atharvakumkar/AI-DevSecOps-Hub",
         },
         {
             title: "Raksha Bandhu",
