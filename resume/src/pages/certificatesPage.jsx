@@ -67,7 +67,7 @@ function CertificatesPage() {
                         }}
                     >
                         {/* Intro */}
-                        <div className="max-w-6xl mx-auto px-6 pt-24">
+                        <div className="max-w-6xl mx-auto px-4 md:px-6 pt-16 md:pt-24">
                             <p
                                 className="
                                     text-center
@@ -87,10 +87,10 @@ function CertificatesPage() {
                         </div>
 
                         {/* Heading */}
-                        <div className="flex justify-center items-center mt-16 mb-12">
+                        <div className="flex justify-center items-center mt-10 md:mt-16 mb-8 md:mb-12">
                             <h1
                                 className="
-                                    text-4xl md:text-6xl
+                                    text-3xl md:text-6xl
                                     font-bold
                                     font-body
                                     text-white
@@ -104,8 +104,8 @@ function CertificatesPage() {
                     </motion.div>
 
                     {/* Certificates Grid */}
-                    <div className="max-w-7xl mx-auto px-6 pb-24">
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <div className="max-w-7xl mx-auto px-4 md:px-6 pb-16 md:pb-24">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
                             {certificates.map((certificate, index) => (
                                 <motion.div
                                     key={index}
@@ -127,7 +127,7 @@ function CertificatesPage() {
                                         backdrop-blur-md
                                         border border-white/10
                                         rounded-3xl
-                                        p-6
+                                        p-5 md:p-6
                                         flex flex-col
                                         h-full
                                         transition-all
@@ -152,7 +152,7 @@ function CertificatesPage() {
                                     </span>
 
                                     {/* Title */}
-                                    <h2 className="text-2xl font-semibold text-white mb-3">
+                                    <h2 className="text-xl md:text-2xl font-semibold text-white mb-3">
                                         {certificate.title}
                                     </h2>
 
