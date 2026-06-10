@@ -72,7 +72,7 @@ function ContactPage() {
                                         Location
                                     </p>
                                     <p className="text-lg md:text-2xl font-semibold text-white text-center font-body">
-                                        India
+                                        Mumbai
                                     </p>
                                 </div>
 
