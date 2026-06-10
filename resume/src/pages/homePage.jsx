@@ -49,7 +49,7 @@ function HomePage() {
                             ease: "easeOut",
                         }}
                     >
-                        <div className="flex flex-col items-center justify-center w-full max-w-7xl mx-auto -mt-16 md:-mt-24">
+                        <div className="flex flex-col items-center justify-center mx-auto -mt-16 md:-mt-24">
                             <div className="flex flex-col items-center text-center px-6">
                         <h1 className="
         text-4xl sm:text-5xl md:text-[84px]
