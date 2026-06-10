@@ -28,29 +28,10 @@ function CertificatesPage() {
         <>
             <CertificateHeader />
 
-            <div className="relative min-h-screen text-white overflow-hidden">
-                {/* Background */}
-                <motion.div
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 0.8 }}
-                    transition={{
-                        duration: 1.8,
-                        ease: "easeOut",
-                    }}
-                    className="absolute inset-0"
-                    style={{
-                        backgroundImage: "url('/constellation.svg')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundAttachment: "fixed",
-                    }}
-                />
-
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/85" />
-
-                {/* Content */}
-                <div className="relative z-10">
+            <motion.div 
+                className="relative min-h-screen text-white overflow-hidden"
+                exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
+            >
                     {/* Intro + Heading Animation */}
                     <motion.div
                         initial={{
@@ -194,8 +175,7 @@ function CertificatesPage() {
                     </div>
 
                     <Footer />
-                </div>
-            </div>
+            </motion.div>
         </>
     );
 }

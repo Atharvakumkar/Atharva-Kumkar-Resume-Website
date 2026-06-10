@@ -11,27 +11,10 @@ function ProjectsPage() {
         <>
             <ProjectsHeader />
 
-            <div className="relative min-h-screen text-white overflow-hidden">
-
-                {/* Animated Constellation Background */}
-                <motion.div
-                    initial={{ opacity: 1 }}
-                    animate={{ opacity: 0.8 }}
-                    transition={{
-                        duration: 1.8,
-                        ease: "easeOut",
-                    }}
-                    className="absolute inset-0"
-                    style={{
-                        backgroundImage: "url('/constellation.svg')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundAttachment: "fixed",
-                    }}
-                />
-
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/85" />
+            <motion.div 
+                className="relative min-h-screen text-white overflow-hidden"
+                exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
+            >
 
                 {/* Content */}
                 <motion.div
@@ -162,7 +145,7 @@ function ProjectsPage() {
 
                     <Footer />
                 </motion.div>
-            </div>
+            </motion.div>
         </>
     );
 }

@@ -9,29 +9,10 @@ function AboutPage() {
         <>
             <AboutHeader />
 
-            {/* Global Background */}
-            <div className="relative text-white">
-                {/* Animated Constellation Background */}
-                <motion.div
-                    initial={{ opacity: 0.2 }}
-                    animate={{ opacity: 0.05 }}
-                    transition={{
-                        duration: 1.8,
-                        ease: "easeOut",
-                    }}
-                    className="fixed inset-0 -z-0"
-                    style={{
-                        backgroundImage: "url('/constellation.svg')",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                    }}
-                />
-
-                {/* Dark Overlay */}
-                <div className="fixed inset-0 bg-black/85 -z-10" />
-
-                {/* Page Content */}
-                <div className="relative z-10 text-white">
+            <motion.div 
+                className="relative text-white"
+                exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
+            >
                     {/* Hero / Introduction Section */}
                     <motion.div
                         className="px-6 pt-16 md:pt-30"
@@ -97,8 +78,7 @@ function AboutPage() {
                     <ExploringAbout />
 
                     <Footer />
-                </div>
-            </div>
+            </motion.div>
         </>
     );
 }
