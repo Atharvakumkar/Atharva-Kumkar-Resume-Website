@@ -52,16 +52,16 @@ function ContactHeader() {
   return (
     <>
       {/* Static Header */}
-      <AnimatePresence>
-        {!scrolled && (
-          <motion.header
-            key="static-header"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.35, ease: "easeInOut" }}
-            className="font-text bg-black sticky top-0 z-50 w-full"
-          >
+      <motion.header
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ 
+          opacity: scrolled ? 0 : 1, 
+          y: scrolled ? -20 : 0,
+          pointerEvents: scrolled ? "none" : "auto" 
+        }}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="font-text bg-black sticky top-0 z-50 w-full"
+      >
             <div className="max-w-7xl mx-auto px-5 md:px-9 py-4 flex items-center justify-between">
               <h1 className="text-xl md:text-2xl font-semibold text-white tracking-tight">
                 Atharva Kumkar
@@ -150,8 +150,6 @@ function ContactHeader() {
               )}
             </AnimatePresence>
           </motion.header>
-        )}
-      </AnimatePresence>
 
       {/* Floating Header */}
       <AnimatePresence>
@@ -176,16 +174,11 @@ function ContactHeader() {
                 w-full max-w-3xl
               "
             >
-              <motion.div
-                className="flex items-center gap-2 shrink-0"
-                initial={{ opacity: 0, x: -10 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.08, duration: 0.3 }}
-              >
+              <div className="flex items-center gap-2 shrink-0">
                 <span className="text-sm font-semibold text-white tracking-tight whitespace-nowrap">
                   Atharva Kumkar
                 </span>
-              </motion.div>
+              </div>
 
               {/* Desktop Nav Links */}
               <nav className="hidden md:flex flex-1 justify-end">
@@ -193,12 +186,7 @@ function ContactHeader() {
                   {links.map(({ to, label }, i) => {
                     const isActive = location.pathname === to;
                     return (
-                      <motion.li
-                        key={to}
-                        initial={{ opacity: 0, y: -8 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.06 + i * 0.05, duration: 0.3 }}
-                      >
+                      <li key={to}>
                         <Link
                           to={to}
                           className={`
@@ -219,7 +207,7 @@ function ContactHeader() {
                             />
                           )}
                         </Link>
-                      </motion.li>
+                      </li>
                     );
                   })}
                 </ul>
