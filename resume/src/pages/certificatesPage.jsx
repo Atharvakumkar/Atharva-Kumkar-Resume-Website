@@ -11,12 +11,6 @@ function CertificatesPage() {
             link: "https://www.credly.com/badges/ff1b0cba-3e60-4782-89d2-acaa5a29427c/public_url",
         },
         {
-            title: "Introduction to Linux",
-            issuer: "The Linux Foundation",
-            category: "Linux",
-            link: "#",
-        },
-        {
             title: "High Performance Leadership: Lessons from Formula 1®",
             issuer: "Santander",
             category: "Soft Skills",
