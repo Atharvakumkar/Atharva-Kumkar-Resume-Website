@@ -77,6 +77,39 @@ function AboutPage() {
                     <BuildAbout />
                     <ExploringAbout />
 
+                    {/* Photography Section */}
+                    <motion.div
+                        className="flex flex-col items-center justify-center pt-10 pb-24 px-6 text-center"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
+                        <h2
+                            className="
+                                text-[36px] md:text-4xl
+                                font-bold
+                                mb-8
+                                font-body
+                                text-white
+                                [text-shadow:0_0_10px_rgba(255,255,255,0.4),0_0_20px_rgba(255,255,255,0.2)]
+                                mx-10
+                            "
+                        >
+                            Beyond engineering, I capture stories through landscapes, travel, and photography.
+                        </h2>
+                        
+                        <a
+                            href="https://atharvakumkar.netlify.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="bg-white text-black py-2 px-8 rounded-[4px] font-body flex items-center gap-2 transition-all duration-300 hover:scale-105 hover:[box-shadow:0_0_10px_#ffffff,0_0_20px_#ffffff,0_0_40px_#ffffff]">
+                                Visit the Website
+                            </button>
+                        </a>
+                    </motion.div>
+
                     <Footer />
             </motion.div>
         </>
