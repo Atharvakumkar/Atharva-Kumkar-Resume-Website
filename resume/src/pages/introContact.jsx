@@ -129,7 +129,7 @@ function IntroContact() {
                         </a>
 
                         <a
-                            href="https://drive.google.com/file/d/1jW4EMRjzFF_CW_ssh-s-h9uUIlA4440j/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1UwSO9PuwwYVaEK9ekKD0iZtmUwkkXW2x/view?usp=drive_link"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
