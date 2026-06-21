@@ -96,7 +96,6 @@ To deploy your own fork:
 ## Author
 
 **Atharva Kumkar**
-- GitHub: [@Atharvakumkar](https://github.com/Atharvakumkar)
 - Live Resume: [atharva-kumkar-resume.vercel.app](https://atharva-kumkar-resume.vercel.app)
 
 ---
