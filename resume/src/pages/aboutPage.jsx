@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import AboutHeader from "../components/aboutHeader";
 import Footer from "../components/footer";
+import ExperienceAbout from "./experienceAboutPage";
 import BuildAbout from "./buildAboutPage";
 import ExploringAbout from "./exploringAboutPage";
 
@@ -13,24 +14,28 @@ function AboutPage() {
                 className="relative text-white"
                 exit={{ opacity: 0, y: -20, transition: { duration: 0.3 } }}
             >
-                    {/* Hero / Introduction Section */}
+                    {/* Experience Section at the top */}
+                    <ExperienceAbout />
+
+                    {/* Philosophy / Introduction Section */}
                     <motion.div
-                        className="px-6 pt-16 md:pt-30"
+                        className="px-4 md:px-10 pt-12 md:pt-20"
                         initial={{
                             opacity: 0,
                             y: 30,
                         }}
-                        animate={{
+                        whileInView={{
                             opacity: 1,
                             y: 0,
                         }}
+                        viewport={{ once: true }}
                         transition={{
-                            duration: 1,
+                            duration: 0.8,
                             ease: "easeOut",
                         }}
                     >
-                        <div className="pt-6 pb-16 px-4 md:pt-10 md:pb-30 md:px-10">
-                            <h1
+                        <div className="max-w-7xl mx-auto pt-4 pb-12 md:pb-20">
+                            <h2
                                 className="
                                     text-3xl md:text-5xl
                                     font-bold
@@ -41,7 +46,7 @@ function AboutPage() {
                                 "
                             >
                                 How I Think About Engineering
-                            </h1>
+                            </h2>
 
                             <p className="text-lg text-gray-300 leading-relaxed font-body">
                                 Engineering, to me, is about understanding
