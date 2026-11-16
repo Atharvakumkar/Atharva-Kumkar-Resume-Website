@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -14,11 +14,11 @@ function AnimatedRoutes() {
     return (
         <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
-                <Route path='/' element={<HomePage />} />
-                <Route path='/about' element={<AboutPage />} />
-                <Route path='/projects' element={<ProjectsPage />} />
-                <Route path='/certificates' element={<CertificatesPage />} />
-                <Route path='/contact' element={<ContactPage />} />
+                <Route path="/" element={<HomePage />} />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/certificates" element={<CertificatesPage />} />
+                <Route path="/contact" element={<ContactPage />} />
             </Routes>
         </AnimatePresence>
     );
@@ -26,9 +26,11 @@ function AnimatedRoutes() {
 
 function App() {
     return (
-        <BrowserRouter>
+        <>
             <ScrollToTop />
+
             <div className="relative min-h-screen bg-black text-white overflow-hidden">
+
                 {/* Global Animated Constellation Background */}
                 <motion.div
                     initial={{ opacity: 1 }}
@@ -45,7 +47,7 @@ function App() {
                         backgroundAttachment: "fixed",
                     }}
                 />
-                
+
                 {/* Global Dark Overlay */}
                 <div className="fixed inset-0 bg-black/85 z-0" />
 
@@ -53,8 +55,9 @@ function App() {
                 <div className="relative z-10 min-h-screen">
                     <AnimatedRoutes />
                 </div>
+
             </div>
-        </BrowserRouter>
+        </>
     );
 }
 
