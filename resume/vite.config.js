@@ -3,9 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS
-    ? '/Atharva-Kumkar-Resume-Website/'
-    : '/',
+  base: '/Atharva-Kumkar-Resume-Website/',
   plugins: [
     react(),
     tailwindcss()
