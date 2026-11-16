@@ -39,7 +39,7 @@ function App() {
                     }}
                     className="fixed inset-0 z-0"
                     style={{
-                        backgroundImage: "url('/constellation.svg')",
+                        backgroundImage: `url('${import.meta.env.BASE_URL}constellation.svg')`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundAttachment: "fixed",
